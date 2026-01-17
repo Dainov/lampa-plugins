@@ -59,7 +59,7 @@
     function proxy(name) {
       var ip = getMyIp();
       var proxy1 = (window.location.protocol === 'https:' ? 'https://' : 'http://') + 'prox.lampa.stream/';
-      var proxy2 = 'https://lampa.alex-976.workers.dev/?url=';
+      var proxy2 = 'https://lampa.alex-976.workers.dev/';
       var proxy3 = 'https://cors557.deno.dev/';
       var proxy_other = Lampa.Storage.field('online_mod_proxy_other') === true ? Lampa.Storage.field('online_mod_proxy_other_url') : '';
       var user_proxy2 = (proxy_other || proxy2) + (ip ? 'ip' + ip + '/' : '');
